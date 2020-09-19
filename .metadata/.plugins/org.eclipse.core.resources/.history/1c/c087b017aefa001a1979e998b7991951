@@ -1,0 +1,7 @@
+
+public class Main {
+	public static void main(String[] args) {
+		LinkedListStack enqueue = new LinkedListStack();
+		LinkedListStack dequeue = new LinkedListStack();
+	}
+}

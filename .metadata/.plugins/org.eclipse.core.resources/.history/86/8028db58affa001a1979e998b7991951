@@ -1,0 +1,8 @@
+
+public class ArrayQueue {
+	private ResizingArrayStack<String> stack;
+	
+	public ArrayQueue() {
+		stack = new ResizingArrayStack<String>();
+	}
+}

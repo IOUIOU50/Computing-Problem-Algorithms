@@ -1,0 +1,16 @@
+
+public class ArrayQueue {
+	private ResizingArrayStack<String> stack;
+	
+	public ArrayQueue() {
+		stack = new ResizingArrayStack<String>();
+	}
+	
+	public void push(String item) {
+		stack.push(item);
+	}
+	
+	public String pop() {
+		ResizingArrayStack<String> 
+	}
+}

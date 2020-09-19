@@ -4,7 +4,7 @@
  * - size 필드 추가
  * - size()메소드의 구현 부분이 복잡한 알고리즘에서
  *   size필드를 반환하는 것으로 변경*/
-public class LinkedListStack {
+public class LinkedListStack implements Cloneable {
 	private Node first;
 	private int size;
 	
@@ -39,5 +39,10 @@ public class LinkedListStack {
 
 	public int Size() {
 		return this.size;
+	}
+	
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		return super.clone();
 	}
 }

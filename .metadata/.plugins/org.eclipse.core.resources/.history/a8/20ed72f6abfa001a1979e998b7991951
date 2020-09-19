@@ -1,0 +1,9 @@
+
+public class Queue {
+	private LinkedListStack enqueue;
+	private LinkedListStack dequeue;
+	
+	public Queue() {
+		
+	}
+}
