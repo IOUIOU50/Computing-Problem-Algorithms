@@ -1,0 +1,52 @@
+import java.util.Random;
+
+public class Sort {
+	public static void main(String[] args) {
+		Random rd = new Random();
+		long startTime;
+		double[] array = new double[10000];
+		
+		for(int i=0; i<array.length; i++) {
+			array[0] = rd.nextDouble();
+		}
+		
+		//선택정렬 시간 측정
+		double[] selectionSortArray = array.clone();
+		startTime = System.currentTimeMillis();
+		selectionSort(selectionSortArray);
+		System.out.println("SelectionTime : " + (System.currentTimeMillis() - startTime) + "ms");
+		selectionSortArray = null;
+		
+		double[] insertionSortArray = array.clone();
+		startTime = System.currentTimeMillis();
+		insertionSort(selectionSortArray);
+		System.out.println("SelectionTime : " + (System.currentTimeMillis() - startTime) + "ms");
+		insertionSortArray = null;
+	}
+	
+	public static void selectionSort(double[] array) {
+		for(int i=0; i<array.length; i++) {
+			int min = i;
+			for(int j=i+1; j<array.length; j++) {
+				if(array[min] > array[j]) {
+					min = j;
+				}
+			}
+			double tmp = array[min];
+            array[min] = array[i];
+            array[i] = tmp;
+		}
+	}
+	
+	public static void insertionSort(double[] array) {
+		int N = array.length;
+		
+		for(int i=1; i<N; i++) {
+			for(int j=i; j>0 && array[i]<array[j]; j--) {
+			     double temp = array[i];
+			     array[i] = array[j];
+			     array[j] = temp;
+			}
+		}
+	}
+}
