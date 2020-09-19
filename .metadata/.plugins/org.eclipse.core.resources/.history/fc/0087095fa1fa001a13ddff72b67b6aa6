@@ -1,0 +1,37 @@
+public class LinkedListStack {
+	private Node first;
+	private int size;
+	
+	private class Node{
+		String item;
+		Node next;
+	}
+	
+	public LinkedListStack() {
+		 this.first = null;
+		 this.size = 0;
+	}
+
+	public void push(Object item) {
+		size++;
+		Node oldfirst = first;
+		first = new Node();
+		first.item = (String)item;
+		first.next = oldfirst;
+	}
+
+	public Object pop() {
+		size--;
+		String item = first.item;
+		first = first.next;
+		return item;
+	}
+
+	public boolean isEmpty() {
+		return first == null;
+	}
+
+	public int Size() {
+		return this.size;
+	}
+}
