@@ -3,6 +3,6 @@
 	<classpathentry kind="src" path="ADT"/>
 	<classpathentry kind="src" path="Stack"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/Users/akqjq/Desktop/jar/build/HW_2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/akqjq/Desktop/UNIV/Programming/Java/컴퓨팅문제와알고리즘/HW_2/jar/build/HW_2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
