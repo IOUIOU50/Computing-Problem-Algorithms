@@ -22,6 +22,7 @@ public class Sort {
 		selectionSort(selectionSortArray);
 		System.out.println("SelectionTime : " + (System.currentTimeMillis() - startTime) + "ms");
 		selectionSortArray = null;
+		System.out.println();
 		
 		double[] insertionSortArray = array.clone();
 		startTime = System.currentTimeMillis();
