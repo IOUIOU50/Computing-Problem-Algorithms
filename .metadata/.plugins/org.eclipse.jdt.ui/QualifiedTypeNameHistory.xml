@@ -22,4 +22,6 @@
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="org.w3c.dom.css.Counter"/>
+<fullyQualifiedTypeName name="InsertionSort"/>
+<fullyQualifiedTypeName name="MergeSort"/>
 </qualifiedTypeNameHistroy>
