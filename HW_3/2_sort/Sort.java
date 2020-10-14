@@ -1,5 +1,4 @@
 import java.util.Random;
-
 public class Sort {
 	public static void main(String[] args) {
 		Random rd = new Random();
@@ -7,7 +6,7 @@ public class Sort {
 		
 		/* 표본 10,000개는 삽입정렬과 셸정렬 수행시간이 너무 빨라서 측정 시간이 0ms로 나옴
 		 * 따라서 표본을 100,000개로 늘림*/
-		double[] array = new double[100000];
+		double[] array = new double[500000];
 		
 		for(int i=0; i<array.length; i++) {
 			array[0] = rd.nextDouble();
