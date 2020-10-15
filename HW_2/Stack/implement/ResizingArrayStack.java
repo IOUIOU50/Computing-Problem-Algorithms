@@ -9,13 +9,13 @@ public class ResizingArrayStack<Item> implements Iterable<Item>, Stack<Item> {
 	private Item[] a;
 	private int N;
 	
-	//main¿¡¼­ °´Ã¼ »ý¼º½Ã È£Ãâ
+	//mainï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È£ï¿½ï¿½
 	public ResizingArrayStack() {
 		this.a = (Item[])new Object[1];
 		this.N = 0;
 	}
 	
-	//push¿¡¼­ ¹è¿­ÀÌ 2/3ÀÌ»ó Ã¡À»½Ã È£Ãâ
+	//pushï¿½ï¿½ï¿½ï¿½ ï¿½è¿­ï¿½ï¿½ 2/3ï¿½Ì»ï¿½ Ã¡ï¿½ï¿½ï¿½ï¿½ È£ï¿½ï¿½
 	private void resize(int max) {
 		Item[] temp = (Item[])new Object[max];
 		for(int i=0; i<N; i++) {
@@ -26,7 +26,7 @@ public class ResizingArrayStack<Item> implements Iterable<Item>, Stack<Item> {
 				+ " is " + this.a.length);
 	}
 	
-	//main¿¡¼­ ¿ä¼Ò »ðÀÔ½Ã È£Ãâ
+	//mainï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ô½ï¿½ È£ï¿½ï¿½
 	@Override
 	public void push(Item item) {
 		if(N >= this.a.length*0.66)
@@ -34,37 +34,37 @@ public class ResizingArrayStack<Item> implements Iterable<Item>, Stack<Item> {
 		a[N++] = item;
 	}
 
-	//main¿¡¼­ ¿ä¼Ò ¹ÝÈ¯½Ã È£Ãâ
+	//mainï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ï¿½ï¿½ È£ï¿½ï¿½
 	@Override
 	public Item pop() {
 		Item item = a[--N];
 		a[N] = null;
 			
 		if(N>0 && N==a.length/4)
-			resize(a.length/2);
+			 ;
 		
 		return item;
 	}
 
-	//main¿¡¼­ ¿ä¼Ò ¹ÝÈ¯½Ã StackÀÌ ºñ¾îÀÖ´ÂÁö °ËÃâÇÏ±â À§ÇØ È£Ãâ
+	//mainï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ï¿½ï¿½ Stackï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ È£ï¿½ï¿½
 	@Override
 	public boolean isEmpty() {
 		return false;
 	}
 
-	//main¿¡¼­ pop()¿¬»êÀÌ ³¡³­ µÚ ³²Àº ¿ä¼Ò°¡ ¸î°³ÀÎÁö ¾Ë·ÁÁÙ ¶§ È£Ãâ
+	//mainï¿½ï¿½ï¿½ï¿½ pop()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ò°ï¿½ ï¿½î°³ï¿½ï¿½ï¿½ï¿½ ï¿½Ë·ï¿½ï¿½ï¿½ ï¿½ï¿½ È£ï¿½ï¿½
 	@Override
 	public int Size() {
 		return this.N;
 	}
 
-	//main¿¡¼­ ¸ðµç ¿ä¼Ò¸¦ Ãâ·ÂÇÒ ¶§ È£Ãâ
+	//mainï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½Ò¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ È£ï¿½ï¿½
 	@Override
 	public Iterator<Item> iterator() {
 		return new ReverseArrayIterator();
 	}
 	
-	//iterator()¸Þ¼Òµå¿¡¼­ ±¸ÇöÇÏ´Â Å¬·¡½º
+	//iterator()ï¿½Þ¼Òµå¿¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½
 	private class ReverseArrayIterator implements Iterator<Item>{
 		private int i = N;
 

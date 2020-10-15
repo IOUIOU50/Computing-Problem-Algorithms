@@ -19,7 +19,6 @@
 <fullyQualifiedTypeName name="ArrayQueue"/>
 <fullyQualifiedTypeName name="LinkedListStack"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="org.w3c.dom.css.Counter"/>
 <fullyQualifiedTypeName name="InsertionSort"/>
 <fullyQualifiedTypeName name="MergeSort"/>
@@ -30,4 +29,7 @@
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="java.util.Collection"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="MinHeap"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>
