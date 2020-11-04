@@ -46,4 +46,6 @@ public class InsertionSort<T extends Comparable<T>> {
 			System.out.print(a[i] + " ");
 		}
 	}
+	
+	
 }
