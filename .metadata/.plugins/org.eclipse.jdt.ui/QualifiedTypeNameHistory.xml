@@ -13,7 +13,6 @@
 <fullyQualifiedTypeName name="implement.ResizingArrayStack"/>
 <fullyQualifiedTypeName name="javax.swing.JFrame"/>
 <fullyQualifiedTypeName name="Queue"/>
-<fullyQualifiedTypeName name="java.lang.Cloneable"/>
 <fullyQualifiedTypeName name="ResizingArrayStack"/>
 <fullyQualifiedTypeName name="ArrayQueue"/>
 <fullyQualifiedTypeName name="LinkedListStack"/>
@@ -30,7 +29,6 @@
 <fullyQualifiedTypeName name="java.util.Collections"/>
 <fullyQualifiedTypeName name="MinHeap"/>
 <fullyQualifiedTypeName name="java.io.Serializable"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="java.lang.Iterable"/>
@@ -38,4 +36,10 @@
 <fullyQualifiedTypeName name="SymbolTable.SymbolTableIterator"/>
 <fullyQualifiedTypeName name="SymbolTable"/>
 <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+<fullyQualifiedTypeName name="Key"/>
+<fullyQualifiedTypeName name="java.lang.Cloneable"/>
+<fullyQualifiedTypeName name="java.util.Queue"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="BSTSymbolTable"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>

@@ -9,6 +9,7 @@ org.eclipse.jdt.internal.ui.navigator.layout=2
 org.eclipse.jdt.internal.ui.navigator.librariesnode=true
 org.eclipse.jdt.ui.formatterprofiles.version=19
 org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="false" context\="methodbody_context" deleted\="false" description\="Code in created method stubs" enabled\="true" id\="org.eclipse.jdt.ui.text.codetemplates.methodbody" name\="methodbody">${body_statement}</template><template autoinsert\="false" context\="constructorbody_context" deleted\="false" description\="Code in created constructor stubs" enabled\="true" id\="org.eclipse.jdt.ui.text.codetemplates.constructorbody" name\="constructorbody">${body_statement}</template></templates>
+smart_semicolon=true
 spelling_locale_initialized=true
 useAnnotationsPrefPage=true
 useQuickDiffPrefPage=true
